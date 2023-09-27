@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Julian Casallas</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mediaquery.css' %}">
+    <script src="https://kit.fontawesome.com/90a3ea37c8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        {% include 'layouts/nav.html' %}
+    </header>
+    <main class="main">
+        {% include 'layouts/profile.html' %}
+
+        {% include 'layouts/about.html' %}
+
+        {% include 'layouts/projects.html' %}
+
+        {% include 'layouts/studies.html' %}
+
+        {% include 'layouts/skills.html' %}
+
+        {% include 'layouts/contact.html' %}
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="{% static 'js/portfolio.js' %}"></script>
+</body>
+
+</html>

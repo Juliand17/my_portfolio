@@ -1,0 +1,29 @@
+{% load static %}
+<section class="section" id="contacto">
+    <article class='article'>
+        <h2 class="subtitle">Contáctame</h2>
+        {% if name %}
+            <p class='contacto__aviso'>Gracias <span>{{name.capitalize}}!</span>, por ponerte en contacto, leere tu mensaje.</p>
+        {% else %}
+            {% include 'layouts/partials/form.html' %}
+        {% endif %}
+        <i class="boton__link fa-solid fa-link" id="boton__link"></i>
+        <div class="redes" id="redes">
+            <ul class="toolkit">
+                <li class="toolkit__item">
+                    <a href="mailto:julian.casallasb@gmail.com" class="toolkit__link"><i id='fa-envelope' class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li class="toolkit__item">
+                    <a href="https://github.com/JulianD1997" class="toolkit__link"><i
+                            class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="toolkit__item">
+                    <a href="https://www.linkedin.com/in/julian-david-casallas-bernal-83b44217a/"
+                        class="toolkit__link"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+            <span class='correo'>julian.casallasb@gmail.com</span>
+            <a href="https://resume.io/r/mrVI8VPt2" target="_blank" class="download">curriculum vitae</a>
+        </div>
+    </article>
+</section>

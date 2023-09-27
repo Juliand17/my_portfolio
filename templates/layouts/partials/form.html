@@ -1,0 +1,20 @@
+<form class="form" method="POST" action="#contacto" autocomplete="off" id="form">
+    {% csrf_token %}
+    <div class="form__group">
+        <input class="form__input" type="Text" name="name" id="name">
+        <label class="form__label" for="name">Nombre</label>
+    </div>
+    <div class="form__group">
+        <input class="form__input" type="email" name="email" id="email">
+        <label class="form__label" for="email">Correo</label>
+    </div>
+    <div class="form__group">
+        <input class="form__input" type="text" name="subject" id="subject">
+        <label class="form__label" for="subject">Asunto</label>
+    </div>
+    <div class="form__group">
+        <textarea class="form__input text__area" name="text__area" id="text__area"></textarea>
+        <label class="form__label" for="text__area">Mensaje</label>
+    </div>
+    <button type="submit" class="form__input button">Enviar</button>
+</form>
